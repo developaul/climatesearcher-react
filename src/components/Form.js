@@ -9,7 +9,7 @@ const Form = ({ ciudad, pais, setBusqueda, setConsultar }) => {
     const handleChange = e => {
         setBusqueda( busq => ({
             ...busq,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value.trim()
         }));
     };
 
